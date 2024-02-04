@@ -21,12 +21,12 @@ function Footer() {
                         <li className="list-inline-item">
                             <Link to="/privacy-policy">Privacy Policy</Link>
                         </li>
-                        <li className="list-inline-item">
+                        {/* <li className="list-inline-item">
                             <Link to="/contact">Contact</Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
-                <nav className="col-12">
+                {/* <nav className="col-12">
                     <ul className="list-inline text-lg-right text-center social-icon">
                         <li className="list-inline-item">
                             <a className="facebook" href="#"><i className="ti-facebook"></i></a>
@@ -41,7 +41,7 @@ function Footer() {
                             <a className="black" href="#"><i className="ti-github"></i></a>
                         </li>
                     </ul>
-                </nav>
+                </nav> */}
             </div>
         </div>
     </footer>
