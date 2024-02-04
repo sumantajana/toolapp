@@ -8,7 +8,6 @@ import blueHalfCycle from "../../assets/images/background-shape/blue-half-cycle.
 import yellowTriangle from "../../assets/images/background-shape/yellow-triangle.png";
 import teamBgTriangle from "../../assets/images/background-shape/team-bg-triangle.png";
 import seoBall_2 from "../../assets/images/background-shape/seo-ball-2.png";
-import RemovedElements from "../layout/removedElement";
 import HomeLayout from '../layout/homeLayout';
 import Tools from '../tools/homeIndex';
 import Validation, { doValidate } from '../../helper/commonValidation';
@@ -55,8 +54,7 @@ function HomeIndex(props) {
             </div>
         </section>
         <Tools componentRef={toolRef} />
-        {false && <RemovedElements />}
-        <section className="newsletter">
+        {/* <section className="newsletter">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 text-center">
@@ -73,7 +71,7 @@ function HomeIndex(props) {
                 </div>
             </div>
             <img className="newsletter-bg-shape left-right-animation" src={seoBall_2} alt="background-shape" />
-        </section>
+        </section> */}
     </HomeLayout >
 }
 export default HomeIndex;

@@ -6,12 +6,10 @@ import Page404 from './view/layout/404';
 import Interceptor from './interceptor';
 import Tools from './view/tools/homeIndex';
 import * as AllTools from './view/tools';
-import Emoji from './view/tools/searchEmoji';
 import toolsData from './view/tools/data.json';
 import PrivacyPolicy from './view/privacyPolicy';
 import ContactUs from './view/contactUs';
 import AboutUs from './view/about';
-import Test from './view/test/test.jsx';
 import { func } from './helper/import';
 import BirthdayWish from './view/tools/birthdayWisher/birthdayWish';
 function Application() {
@@ -20,8 +18,6 @@ function Application() {
         <Routes>
             <Route path="/" exact element={<HomeIndex />} />
             <Route path="/tools" exact element={<Tools isIncludeLayout={true} />} />
-            <Route path="/emoji" exact element={<Emoji />} />
-            <Route path="/test" exact element={<Test />} />
             <Route exact path='/birthday/:name?/:month?/:day?' element={<BirthdayWish />} />
             {toolsData.map(dt => {
                 if (!!dt.link) {

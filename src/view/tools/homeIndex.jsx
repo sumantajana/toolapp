@@ -1,6 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
-import Compressor from 'compressorjs';
 import featureBg_2 from "../../assets/images/background-shape/feature-bg-2.png";
 import featureBg_1 from "../../assets/images/background-shape/feature-bg-1.png";
 import dataSet from './data.json';
@@ -10,27 +9,6 @@ function WrapComponent({ isIncludeLayout = false, children }) {
 }
 function ToolsIndex(props) {
     const componentRef = useRef("");
-    useEffect(() => {
-        // document.getElementById('file').addEventListener('change', (e) => {
-        //     const file = e.target.files[0];
-        //     if (!file) {
-        //         return;
-        //     }
-        //     new Compressor(file, {
-        //         mimeType: 'string',
-        //         quality: 0.6,
-        //         // The compression process is asynchronous,
-        //         // which means you have to access the `result` in the `success` hook function.
-        //         success(result) {
-        //             document.getElementById('op').src = result;
-        //             console.log('result', result)
-        //         },
-        //         error(err) {
-        //             console.log(err.message);
-        //         },
-        //     });
-        // });
-    }, [])
     return <WrapComponent {...props}>
         <section ref={props.componentRef || componentRef} className="section feature mb-0">
             <div className="container">

@@ -1,4 +1,3 @@
-import fIcon from 'feather-icons';
 const bodyNode = window.$('body');
 const sidebarHover = () => {
     window.$(".sidebar .sidebar-body").hover(
@@ -37,6 +36,5 @@ const handleCollapse = ({ target }) => {
     }
 }
 const inputFrameI = () => window.$(".form-check label,.form-radio label").append('<i class="input-frame"></i>');
-const FIcon = () => fIcon.replace();
-const jsInit = { sidebarHover, sidebarToggle, inputFrameI, FIcon, handleCollapse };
+const jsInit = { sidebarHover, sidebarToggle, inputFrameI, handleCollapse };
 export default jsInit;
